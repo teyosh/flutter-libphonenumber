@@ -6,7 +6,10 @@ homepage: https://github.com/emostar/flutter-libphonenumber
 dependencies:
   flutter:
     sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
   meta: ^1.2.3
+  js: ^0.6.2
 
 flutter:
   plugin:
@@ -16,6 +19,9 @@ flutter:
         pluginClass: LibphonenumberPlugin
       ios:
         pluginClass: LibphonenumberPlugin
+      web:
+        pluginClass: LibphonenumberPlugin
+        fileName: web/libphonenumber.dart        
 
 environment:
   sdk: ">=1.19.0 <3.0.0"
